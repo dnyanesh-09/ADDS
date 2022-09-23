@@ -5,7 +5,7 @@ import os
 
 def Menu():
     while (True):
-        print("\n1.nmap\n2.Eternal Blue\n3.Ldap Enumeration\n4.exit\n")
+        print("\n1.nmap\n2.Eternal Blue\n3.Ldap Enumeration\n4.cmd access\n5.Exit")
         choice = int(input("Please Enter a Choice :- "));
         if (choice == 1):
             os.system("./script/nmap.sh")
@@ -14,6 +14,8 @@ def Menu():
         if (choice == 3):
             os.system("./script/ldap.sh")
         if (choice == 4):
+            os.system("./script/shell.sh")
+        if (choice == 5):
             exit()
 
 def main():

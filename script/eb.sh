@@ -12,5 +12,5 @@ EOF
 
 rm -rf root/.msf4
 rm -rf /root/.john
-john --format=NT /root/.msf4/loot/* --wordlist=/home/dnyanesh/password.lst
+john --format=NT /root/.msf4/loot/* --wordlist=./script/password.lst
 #john --format=NT /root/.msf4/loot/* --wordlist=/home/dnyanesh/password.lst
