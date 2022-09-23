@@ -7,7 +7,7 @@ RUN chmod 755 msfinstall
 RUN ./msfinstall
 WORKDIR /ADDS
 copy . /ADDS
-mkdir /root/.msf/loot/
+RUN mkdir /root/.msf/loot/
 CMD ./main.py
 
 
